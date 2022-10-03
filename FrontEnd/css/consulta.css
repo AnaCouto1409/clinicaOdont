@@ -1,0 +1,309 @@
+header {
+  padding: 0.5rem 1rem;
+  background-color: #cacaee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  background-color: #cdf5f5;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15%;
+}
+
+.logo p {
+  color: blue;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* --------------------- menu -------------------------- */
+
+.menu {
+  list-style: none;
+  border: 1px solid #c0c0c0;
+  float: left;
+}
+
+.menu li {
+  position: relative;
+  float: left;
+  border-right: 1px solid #c0c0c0;
+  padding-right: 1px;
+}
+
+.menu li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+.menu li a:hover {
+  background: #333;
+  color: #fff;
+  -moz-box-shadow: 0 3px 10px 0 #ccc;
+  -webkit-box-shadow: 0 3px 10px 0 #ccc;
+  text-shadow: 0px 0px 5px #fff;
+}
+
+.menu li ul {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: #fff;
+  display: none;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+  display: block;
+}
+
+.menu li ul li {
+  border: 1px solid #c0c0c0;
+  display: block;
+  min-width: max-content;
+}
+/* -------------- menu ----------------- */
+
+.perfil {
+  display: flex;
+}
+
+.perfil p {
+  height: 40px;
+  width: 40px;
+  background-color: aquamarine;
+  border-radius: 20px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.perfil button {
+  background-color: blue;
+  border-radius: 20px;
+  color: #fff;
+  padding: 0 10px;
+  font-weight: 900;
+}
+
+/* ----------------- lista de consultas --------------------- */
+
+article {
+  margin: 10px 50px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  width: 100%;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+section .status {
+  width: 60px;
+  height: 60px;
+  background-color: #008000;
+  border-radius: 30px;
+}
+
+section .conteiner {
+  background-color: #cacaee;
+  border: 3px solid #008000;
+  border-radius: 20px;
+  padding: 0 15px;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+section .conteiner p {
+  display: flex;
+  align-items: center;
+}
+
+section .conteiner div {
+  display: flex;
+  justify-content: center;
+}
+section .conteiner p:nth-child(2) {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+/* ---------------------- Modal ------------------------------ */
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overflow {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.modal {
+  background-color: #b9b9b9;
+  padding: 2.4rem;
+  width: 80%;
+}
+
+/* ------------------------- Form ----------------------------------- */
+
+#form {
+  max-width: 100%;
+}
+
+#form h2 {
+  margin-top: 0;
+}
+
+input {
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+input:nth-child(odd) {
+  margin-right: 0.5rem;
+}
+
+.input-group {
+  margin: 1rem 0;
+}
+
+.input-group:nth-child(1) fieldset {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr 1fr;
+}
+.input-group:nth-child(2) fieldset {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 100px 0.5fr 1fr;
+}
+
+#input-agenda fieldset {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+select {
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  width: 17rem;
+}
+
+.input-group.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-group.actions .button,
+.input-group.actions button {
+  width: 20%;
+}
+
+/* ---------------------------Botões ------------------------------------------ */
+
+.button.cancel {
+  color: #ff0000;
+  border: 2px solid;
+  border-radius: 0.25rem;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  font-size: 1.5rem;
+}
+
+.button.cancel:hover {
+  opacity: 1;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 0.25rem;
+  color: rgb(0, 0, 0);
+  padding: 0;
+  background-color: #00ff00;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: #005f00;
+  color: #ffffff;
+}
+
+/* ----------------- table --------------------- */
+
+.data-table {
+  width: 100%;
+  border-spacing: 0 0.5rem;
+  color: #969cb3;
+}
+
+table thead tr th:first-child,
+table tbody tr td:first-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+table th {
+  background-color: white;
+  font-weight: normal;
+  padding: 1rem 1rem;
+  text-align: left;
+}
+
+table td {
+  background-color: #fff;
+  padding: 1rem 1rem;
+}
+
+tbody tr {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  opacity: 1;
+}
